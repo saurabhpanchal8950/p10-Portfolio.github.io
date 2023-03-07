@@ -148,6 +148,7 @@ section img {
 }
 .project_container {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 3rem;
   margin: 0 10rem;
@@ -259,17 +260,19 @@ footer {
     height: 70vh;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 460px) {
   html {
     font-size: 32%;
   }
   #hero .container {
     flex-direction: column;
   }
+
   .hero_image {
     display: grid;
     place-items: center;
   }
+
   #contact .container {
     height: 50vh;
   }
